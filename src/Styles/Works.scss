@@ -1,0 +1,228 @@
+@import "../Styles/Variables/variable.scss";
+
+.Works {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  color: $textColor;
+
+  .works-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    .works-heading {
+      margin-bottom: 55px;
+      h3 {
+        font-size: 30px;
+        font-family: $primaryFont;
+        color: $textColor;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+
+        span {
+          color: $mainColor;
+        }
+      }
+    }
+
+    .links-wrapper {
+      display: flex;
+      gap: 40px;
+      font-family: $secondaryFont;
+      margin-bottom: 40px;
+
+      li {
+        color: $textColor;
+        font-family: $secondaryFont;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 2px;
+          background-color: $mainColor;
+          width: 0%;
+          bottom: -7px;
+          transition: all ease-in 0.2s;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+
+      .activeCat {
+        color: $mainColor;
+      }
+    }
+
+    .works-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+
+      .work-card {
+        width: 100%;
+
+        &:hover {
+          .work-image {
+            transition: all ease-in-out 1s;
+            transform: scale(0.97);
+
+            img {
+              transition: all ease-in-out 1s;
+              transform: scale(1.05);
+            }
+          }
+        }
+
+        .work-image {
+          width: 100%;
+          height: 300px;
+          overflow: hidden;
+          border-radius: 15px 15px 0px 0px;
+          margin-bottom: 20px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .domain {
+          font-size: 16px;
+          font-weight: 400;
+          font-style: italic;
+          font-family: $secondaryFont;
+          color: $mainColor;
+          margin-bottom: 12px;
+        }
+
+        .desc {
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 300;
+          font-style: italic;
+          font-family: $secondaryFont;
+          color: $textColor;
+          margin-bottom: 12px;
+        }
+
+        .button {
+          display: flex;
+          align-items: center;
+          font-family: $primaryFont;
+          font-size: 16px;
+          font-weight: 400;
+          color: $mainColor;
+          transition: all ease-in-out 0.5s;
+          cursor: pointer;
+
+          &:hover {
+            letter-spacing: 0.5px;
+            .fa-arrow-right-long {
+              transition: all ease-in-out 0.5s;
+              transform: translateX(5px);
+            }
+          }
+
+          .fa-arrow-right-long {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Works {
+    .works-container {
+      .works-heading {
+        margin-bottom: 50px;
+      }
+
+      .links-wrapper {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .works-wrapper {
+        grid-gap: 40px;
+
+        .work-card{
+          .work-image{
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Works {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    .works-container {
+      .works-heading {
+        margin-bottom: 45px;
+        h3 {
+          font-size: 28px;
+        }
+      }
+
+      .links-wrapper {
+        gap: 25px;
+        margin-bottom: 30px;
+      }
+
+      .works-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Works {
+    margin-top: 60px;
+    padding-bottom: 40px;
+    .works-container {
+      .works-heading {
+        margin-bottom: 45px;
+        h3 {
+          font-size: 22px;
+        }
+      }
+
+      .links-wrapper {
+        gap: 25px;
+        margin-bottom: 25px;
+      }
+
+      .works-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+
+        .work-card{
+          .work-image{
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
