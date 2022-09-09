@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1e6074cd.css",
-    "main.js": "/portfolio/static/js/main.2e90d4a4.js",
+    "main.js": "/portfolio/static/js/main.2909c28b.js",
     "static/media/Mohamed Roshan PU.pdf": "/portfolio/static/media/Mohamed Roshan PU.a028e16c26af570853ba.pdf",
     "static/media/image.jpg": "/portfolio/static/media/image.20b59892e65c9279b2ab.jpg",
     "static/media/front-end.svg": "/portfolio/static/media/front-end.1d67104b2e0abe47920e4b21d8ae2eb3.svg",
@@ -26,10 +26,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.6b68be5ec4a0019b92d6aaed44524470.svg",
     "static/media/circle.svg": "/portfolio/static/media/circle.5f3a67c594eeb1c567c8.svg",
     "main.1e6074cd.css.map": "/portfolio/static/css/main.1e6074cd.css.map",
-    "main.2e90d4a4.js.map": "/portfolio/static/js/main.2e90d4a4.js.map"
+    "main.2909c28b.js.map": "/portfolio/static/js/main.2909c28b.js.map"
   },
   "entrypoints": [
     "static/css/main.1e6074cd.css",
-    "static/js/main.2e90d4a4.js"
+    "static/js/main.2909c28b.js"
   ]
 }
